@@ -1,0 +1,69 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .next-draw-from-now, .next-custom-draw {
+      margin: 0 0 30px;
+    }
+
+    .next-draw-from-now__label,
+    .next-custom-draw__label,
+    .next-draw-custom__label {
+      font-weight: 700;
+    }
+
+  </style>
+</head>
+<body>
+  <div class='container'>
+    <h1>Lottery Draw</h1>
+    <div class='next-draw-from-now'>
+      <span class='next-draw-from-now__label'>
+        Next draw from now:
+      </span>
+      <span class='next-draw-from-now__value'></span>
+    </div>
+    <form class='next-custom-draw'>
+      <label
+        for='next-custom-draw__date'
+        class='next-custom-draw__label'>
+        Custom date/time:
+      </label>
+      <input
+        name='next-custom-draw__date'
+        class='next-custom-draw__date'
+        type='date'>
+      <input
+        name='next-custom-draw__time'
+        class='next-custom-draw__time'
+        type='time'>
+      <button class='next-custom-draw__submit'>submit</button>
+      <span class="next-custom-draw__error"></span>
+    </form>
+    <div class='next-draw-custom'>
+      <span class='next-draw-custom__label'>
+        Next custom draw date:
+      </span>
+      <span class='next-draw-custom__value'>(Enter a custom date/time in the date/time picker)</span>
+    </div>
+  </div>
+
+  <script src='./constants.js'></script>
+  <script src='./domHandler.js'></script>
+  <script src='./lotteryDrawTimeHandler.js'></script>
+  <script src='./index.js'></script>
+</body>
+</html>
