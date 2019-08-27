@@ -20,6 +20,8 @@
 
 - You can see the AT execution working by opening the index-test.html file in any browser, in the console
 
+- Tests will be separated in two files, each testing one method in different situations
+
 # SUPPORT
 
 - Chrome, Firefox
